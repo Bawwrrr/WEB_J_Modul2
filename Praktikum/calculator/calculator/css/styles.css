@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.big-container {
+    background-color: #e0e3ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #666575;
+    border-radius: 2rem;
+    max-width: 280px;
+}
+
+.input-field-container {
+    padding: 1rem;
+}
+
+.input-field-input {
+    background-color: #c4e5c6;
+    border-radius: 1rem;
+    padding: 10rem 1rem 1rem 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 2rem;
+    color: #000000;
+    text-align: right;
+}
+
+.button-field-container {
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "acb deb dotb devb"
+        "7b 8b 9b mulb"
+        "4b 5b 6b minb"
+        "1b 2b 3b plusb"
+        "00b 0b equalsb modb";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.button-field-input {
+    border-color: #ffffff;
+    background-color: #83819a;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.button-field-input:nth-child(1) {
+    background-color: #8a90ca;
+    grid-area: acb;
+}
+
+.button-field-input:nth-child(2) {
+    background-color: #8a90ca;
+    grid-area: deb;
+}
+
+.button-field-input:nth-child(3) {
+    background-color: #8a90ca;
+    grid-area: dotb;
+}
+
+.button-field-input:nth-child(4) {
+    grid-area: devb;
+    background-color: #f37b83;
+}
+
+.button-field-input:nth-child(5) {
+    grid-area: 7b;
+}
+
+.button-field-input:nth-child(6) {
+    grid-area: 8b;
+}
+
+.button-field-input:nth-child(7) {
+    grid-area: 9b;
+}
+
+.button-field-input:nth-child(8) {
+    grid-area: mulb;
+    background-color: #f37b83;
+}
+
+.button-field-input:nth-child(9) {
+    grid-area: 4b;
+}
+
+.button-field-input:nth-child(10) {
+    grid-area: 5b;
+}
+
+.button-field-input:nth-child(11) {
+    grid-area: 6b;
+}
+
+.button-field-input:nth-child(12) {
+    grid-area: minb;
+    background-color: #f37b83;
+}
+
+.button-field-input:nth-child(13) {
+    grid-area: 1b;
+}
+
+.button-field-input:nth-child(14) {
+    grid-area: 2b;
+}
+
+.button-field-input:nth-child(15) {
+    grid-area: 3b;
+}
+
+.button-field-input:nth-child(16) {
+    grid-area: plusb;
+    background-color: #f37b83;
+}
+
+.button-field-input:nth-child(17) {
+    grid-area: 00v;
+}
+
+.button-field-input:nth-child(18) {
+    grid-area: 0b;
+}
+
+.button-field-input:nth-child(19) {
+    grid-area: equalsb;
+}
+
+.button-field-input:nth-child(20) {
+    grid-area: modb;
+    background-color: #f37b83;
+}

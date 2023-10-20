@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operasi Penjumlahan</title>
+  </head>
+  <body>
+    <h1>Operasi Penjumlahan Bilangan</h1>
+
+    <form id="calculator-form">
+      <label for="bilangan1">Bilangan Pertama:</label>
+      <input type="text" id="bilangan1" required />
+
+      <label for="bilangan2">Bilangan Kedua:</label>
+      <input type="text" id="bilangan2" required />
+
+      <button type="button" onclick="jumlah()">Jumlahkan</button>
+
+      <button type="button" onclick="resetForm()">Ulang</button>
+
+      <label for="hasil">Hasil:</label>
+      <span id="hasil"></span>
+    </form>
+
+    <script>
+      var total = 0;
+
+      function jumlah() {
+        var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+        var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+
+        if (!isNaN(bilangan1) && !isNaN(bilangan2)) {
+          var hasil = bilangan1 + bilangan2;
+          total += hasil;
+
+          document.getElementById("hasil").textContent = hasil;
+          document.getElementById("total").textContent = total;
+          alert("hasil perjumlahan :" + hasil);
+        } else {
+          alert("Masukkan bilangan yang valid.");
+        }
+      }
+
+      function resetForm() {
+        document.getElementById("bilangan1").value = "";
+        document.getElementById("bilangan2").value = "";
+        document.getElementById("hasil").textContent = "";
+      }
+    </script>
+  </body>
+</html>

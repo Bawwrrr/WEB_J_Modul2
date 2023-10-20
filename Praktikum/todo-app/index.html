@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ==================== CSS ==================== -->
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!-- ==================== BoxIcons ==================== -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <title>Todo - App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="add-activity-container">
+                <p class="add-activity-title">Add Activity</p>
+                <div class="add-activity-field-container">
+                    <p class="add-activity-text">Activity</p>
+                    <div class="add-activity-field">
+                        <input class="add-activity-field-input" type="text" placeholder="Add activity..." />
+                        <button class="add-activity-field-button" type="button">Add</button>
+                        <button class="edit-activity-field-button button-none" type="button">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list-activities-container">
+                <p class="list-activities-title">List Activities</p>
+                <div class="list-activities-item-container">
+                    <div class="list-activities-item">
+                        <p class="list-activities-item-text">Pinjam dulu seratus</p>
+                        <div class="list-activities-item-options">
+                            <div class="list-activities-item-options-button">
+                                <i class="bx bx-check"></i>
+                            </div>
+                            <div class="list-activities-item-options-button list-activities-item-options-button-orange">
+                                <i class="bx bx-edit-alt"></i>
+                            </div>
+                            <div class="list-activities-item-options-button list-activities-item-options-button-red">
+                                <i class="bx bx-trash-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==================== JavaScript ==================== -->
+        <script src="./javascript/script.js"></script>
+    </body>
+</html>
